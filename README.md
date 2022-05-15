@@ -15,7 +15,7 @@ The tool supports:
   - '-v' is for printing the raw jarm fingerprint of every request/response
 * querying a list of servers and saving results into a csv file.
   - ex., jarmcpp.exe -f <file_domains_list> -c
-  - '-c' is for saving the file to a csv file with the name "jarmcpp_<date>_<time>_<am|pm>.csv"
+  - '-c' is for saving the results to a csv file with the name "jarmcpp_<date>_<time>_<am|pm>.csv"
 * printing the raw per-request fingerprint
    - '-v' (for ex., jarmcpp.exe -d mfmokbel.com -v)
 ``` 
