@@ -13,7 +13,7 @@ The tool supports:
   - ex., jarmcpp.exe -d google.com -p 443 -v
   - if the option '-p' is not specified, 443 is assumed
   - '-v' is for printing the raw jarm fingerprint of every request/response
-* querying a list of servers and saving results into a csv file.
+* querying a list of servers and saving results into a csv file
   - ex., jarmcpp.exe -f <file_domains_list> -c
   - '-c' is for saving the results to a csv file with the name "jarmcpp\_\<date\>\_\<time\>\_<am|pm>.csv"
 * printing the raw per-request fingerprint
@@ -40,6 +40,24 @@ The tool supports:
  Output:
  ```
     JARM ( []:443): 29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1
+ ```
+ * demangling a jarm hash
+  - ex., jarmcpp.exe -i 29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1
+ 
+ Output (C for Cipher, V for TLS version (_m: minor version)):
+ ```
+    01 -> C: c02f - V_m: 3
+    02 -> C: c02f - V_m: 3
+    03 -> C: 009e - V_m: 3
+    04 -> C: c02f - V_m: 3
+    05 -> C: c02f - V_m: 3
+    06 -> C: no value - V_m: no value
+    07 -> C: 1302 - V_m: 3
+    08 -> C: 1302 - V_m: 3
+    09 -> C: no value - V_m: no value
+    10 -> C: no value - V_m: no value
+
+Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1  
  ```
 # Third-party libraries used
 
