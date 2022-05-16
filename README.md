@@ -57,7 +57,7 @@ The tool supports:
     09 -> C: no value - V_m: no value
     10 -> C: no value - V_m: no value
 
-Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1  
+    Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1  
  ```
 # Third-party libraries used
 
