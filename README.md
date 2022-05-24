@@ -47,16 +47,16 @@ The tool supports:
  
  Output (C for Cipher, V for TLS version (minor version)):
  ```
-    01 -> C: c02f - V_m: 3
-    02 -> C: c02f - V_m: 3
-    03 -> C: 009e - V_m: 3
-    04 -> C: c02f - V_m: 3
-    05 -> C: c02f - V_m: 3
-    06 -> C: no value - V_m: no value
-    07 -> C: 1302 - V_m: 3
-    08 -> C: 1302 - V_m: 3
-    09 -> C: no value - V_m: no value
-    10 -> C: no value - V_m: no value
+    01 -> C: c02f - V: 3
+    02 -> C: c02f - V: 3
+    03 -> C: 009e - V: 3
+    04 -> C: c02f - V: 3
+    05 -> C: c02f - V: 3
+    06 -> C: no value - V: no value
+    07 -> C: 1302 - V: 3
+    08 -> C: 1302 - V: 3
+    09 -> C: no value - V: no value
+    10 -> C: no value - V: no value
 
     Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1  
  ```
