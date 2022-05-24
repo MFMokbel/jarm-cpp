@@ -45,7 +45,7 @@ The tool supports:
  * demangling a jarm hash
    - ex., jarmcpp.exe -i 29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1
  
- Output (C for Cipher, V for TLS version (_m: minor version)):
+ Output (C for Cipher, V for TLS version (minor version)):
  ```
     01 -> C: c02f - V_m: 3
     02 -> C: c02f - V_m: 3
