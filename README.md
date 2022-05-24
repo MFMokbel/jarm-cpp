@@ -43,7 +43,7 @@ The tool supports:
     JARM ( []:443): 29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1
  ```
  * demangling a jarm hash
-  - ex., jarmcpp.exe -i 29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1
+   - ex., jarmcpp.exe -i 29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1
  
  Output (C for Cipher, V for TLS version (_m: minor version)):
  ```
@@ -60,6 +60,9 @@ The tool supports:
 
     Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1  
  ```
+  * printing jarm hash to the console in json format using the option "-o j"
+    - ex., jarmcpp.exe -d mfmokbel.com -o j
+
 # Third-party libraries used
 
 - [Hash-Library: for SHA-256](https://github.com/stbrumme/hash-library)
