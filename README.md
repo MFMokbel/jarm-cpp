@@ -65,7 +65,7 @@ The tool supports:
 
 Output:
  ```
-    {"server":"mfmokbel.com","ip":"162.241.226.211","hash":"29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1"}
+    {"server":"mfmokbel.com","ip":"162.241.226.211","jhash":"29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1"}
  ```
 
 # Third-party libraries used
