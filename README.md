@@ -22,16 +22,16 @@ The tool supports:
 ``` 
     JARM (mfmokbel.com [162.241.226.211]:443): 29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1
 
-    01: c02f|0303|h2|ff01-0000-0001-000b-0023-0010-0017
-    02: c02f|0303|h2|ff01-0000-0001-000b-0023-0010-0017
-    03: 009e|0303|h2|ff01-0000-0001-0023-0010-0017
-    04: c02f|0303|http/1.1|ff01-0000-0001-000b-0023-0010-0017
-    05: c02f|0303|http/1.1|ff01-0000-0001-000b-0023-0010-0017
-    06: |||
-    07: 1302|0303||002b-0033
-    08: 1302|0303||002b-0033
-    09: |||
-    10: |||
+    1 tls_1_2_forward     -> c02f|0303|h2|ff01-0000-0001-000b-0023-0010-0017
+    2 tls_1_2_reverse     -> c02f|0303|h2|ff01-0000-0001-000b-0023-0010-0017
+    3 tls_1_2_top_half    -> 009e|0303|h2|ff01-0000-0001-0023-0010-0017
+    4 tls_1_2_bottom_half -> c02f|0303|http/1.1|ff01-0000-0001-000b-0023-0010-0017
+    5 tls_1_2_middle_out  -> c02f|0303|http/1.1|ff01-0000-0001-000b-0023-0010-0017
+    6 tls_1_1_middle_out  -> |||
+    7 tls_1_3_forward     -> 1302|0303||002b-0033
+    8 tls_1_3_reverse     -> 1302|0303||002b-0033
+    9 tls_1_3_invalid     -> |||
+   10 tls_1_3_middle_out  -> |||
 ```
 * jarm hashing of the full raw fingerprint
   - ex., jarmcppx.exe -r "<full_raw_fingerprint>"
@@ -47,16 +47,16 @@ The tool supports:
  
  Output (C for Cipher, V for TLS version (minor version)):
  ```
-    01 -> C: c02f - V: 3
-    02 -> C: c02f - V: 3
-    03 -> C: 009e - V: 3
-    04 -> C: c02f - V: 3
-    05 -> C: c02f - V: 3
-    06 -> C: no value - V: no value
-    07 -> C: 1302 - V: 3
-    08 -> C: 1302 - V: 3
-    09 -> C: no value - V: no value
-    10 -> C: no value - V: no value
+    1 tls_1_2_forward      -> C: c02f - V: 3
+    2 tls_1_2_reverse      -> C: c02f - V: 3
+    3 tls_1_2_top_half     -> C: 009e - V: 3
+    4 tls_1_2_bottom_half  -> C: c02f - V: 3
+    5 tls_1_2_middle_out   -> C: c02f - V: 3
+    6 tls_1_1_middle_out   -> C: no value - V: no value
+    7 tls_1_3_forward      -> C: 1302 - V: 3
+    8 tls_1_3_reverse      -> C: 1302 - V: 3
+    9 tls_1_3_invalid      -> C: no value - V: no value
+   10 tls_1_3_middle_out   -> C: no value - V: no value
 
     Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1  
  ```
@@ -65,7 +65,7 @@ The tool supports:
 
 Output:
  ```
-    {"server":"mfmokbel.com","ip":"162.241.226.211","jhash":"29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1"}
+    {"server":"mfmokbel.com","ip":"162.241.226.211","hash":"29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1"}
  ```
 
 # Third-party libraries used
