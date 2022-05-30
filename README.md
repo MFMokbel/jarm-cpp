@@ -73,7 +73,7 @@ Output:
 - [Hash-Library: for SHA-256](https://github.com/stbrumme/hash-library)
 - [SFML: for socket communications](https://www.sfml-dev.org/index.php)
 - [Color Console: for console coloring](https://github.com/imfl/color-console)
-- [cxxopts: for parsing command line arguments](https://github.com/jarro2783/cxxopts)
+- [cxxopts: for parsing command-line arguments](https://github.com/jarro2783/cxxopts)
  
 # History
  
