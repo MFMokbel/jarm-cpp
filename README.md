@@ -11,14 +11,15 @@ There is a [Python](https://github.com/salesforce/jarm) and [Go](https://github.
 The tool supports:
 * querying a server
   - ex., jarmcpp.exe -d google.com -p 443 -v
-  - if the option '-p' is not specified, 443 is assumed
-  - '-v' is for printing the raw jarm fingerprint of every request/response
+  - if the option `-p` is not specified, 443 is assumed
+    - option `-p` takes a list of ports comma separated, if necessary. The first port it connects to successfully, is the one taken irrespective of whether the server accepts TLS/SSL connection over this port or not
+  - `-v` is for printing the raw jarm fingerprint of every request/response
 * querying a list of servers and saving results into a csv file
   - ex., jarmcpp.exe -f <file_domains_list> -c
-  - '-f' is for loading a file with list of servers (one server per line; lines that start with ';' or '//' are ignored)
-  - '-c' is for saving the results to a csv file with the name "jarmcpp\_\<date\>\_\<time\>\_<am|pm>.csv"
+  - `-f` is for loading a file with list of servers (one server per line; lines that start with ';' or '//' are ignored)
+  - `-c` is for saving the results to a csv file with the name "jarmcpp\_\<date\>\_\<time\>\_<am|pm>.csv"
 * printing the raw per-request fingerprint
-   - '-v' (for ex., jarmcpp.exe -d mfmokbel.com -v)
+   - `-v` (for ex., jarmcpp.exe -d mfmokbel.com -v)
 ``` 
     JARM (mfmokbel.com [162.241.226.211]:443): 29d29d15d29d29d00042d42d000000cd600c085f371f8533aaf66051f8e5b1
 
@@ -60,7 +61,7 @@ The tool supports:
 
     Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1  
  ```
-  * printing jarm hash to the console in json format using the option "-o j"
+  * printing jarm hash to the console in json format using the option `-o j`
     - ex., jarmcpp.exe -d mfmokbel.com -o j
 
 Output:
