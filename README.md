@@ -48,18 +48,28 @@ The tool supports:
  
  Output (C for Cipher, V for TLS minor version):
  ```
-    1 tls_1_2_forward      -> C: c02f - V: 3
-    2 tls_1_2_reverse      -> C: c02f - V: 3
-    3 tls_1_2_top_half     -> C: 009e - V: 3
-    4 tls_1_2_bottom_half  -> C: c02f - V: 3
-    5 tls_1_2_middle_out   -> C: c02f - V: 3
-    6 tls_1_1_middle_out   -> C: no value - V: no value
-    7 tls_1_3_forward      -> C: 1302 - V: 3
-    8 tls_1_3_reverse      -> C: 1302 - V: 3
-    9 tls_1_3_invalid      -> C: no value - V: no value
-   10 tls_1_3_middle_out   -> C: no value - V: no value
+ 1 tls_1_2_forward      -> C: 0xc02f (TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256-Secure)
+                           V: 3 (TLSv1.2)
+ 2 tls_1_2_reverse      -> C: 0xc02f (TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256-Secure)
+                           V: 3 (TLSv1.2)
+ 3 tls_1_2_top_half     -> C: 0x009e (TLS_DHE_RSA_WITH_AES_128_GCM_SHA256-Secure)
+                           V: 3 (TLSv1.2)
+ 4 tls_1_2_bottom_half  -> C: 0xc02f (TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256-Secure)
+                           V: 3 (TLSv1.2)
+ 5 tls_1_2_middle_out   -> C: 0xc02f (TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256-Secure)
+                           V: 3 (TLSv1.2)
+ 6 tls_1_1_middle_out   -> C: no value
+                           V: no value
+ 7 tls_1_3_forward      -> C: 0x1302 (TLS_AES_256_GCM_SHA384-Recommended)
+                           V: 3 (TLSv1.2)
+ 8 tls_1_3_reverse      -> C: 0x1302 (TLS_AES_256_GCM_SHA384-Recommended)
+                           V: 3 (TLSv1.2)
+ 9 tls_1_3_invalid      -> C: no value
+                           V: no value
+10 tls_1_3_middle_out   -> C: no value
+                           V: no value
 
-    Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1  
+Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1
  ```
   * printing jarm hash to the console in json format using the option `-o j`
     - ex., jarmcpp.exe -d mfmokbel.com -o j
