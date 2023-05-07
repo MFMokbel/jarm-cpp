@@ -71,6 +71,8 @@ The tool supports:
 
 Extensions sha-256 hash: cd600c085f371f8533aaf66051f8e5b1
  ```
+ The security identifier suffix that comes after the '-' indicates the security status of a given cipher. The list includes, Recommended, Secure, Weak, and Insecure.
+ 
   * printing jarm hash to the console in json format using the option `-o j`
     - ex., jarmcpp.exe -d mfmokbel.com -o j
 
