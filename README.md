@@ -2,7 +2,7 @@
 
 A C++ implementation of [JARM](https://engineering.salesforce.com/easily-identify-malicious-servers-on-the-internet-with-jarm-e095edac525a). JARM is an active TLS server fingerprinting algorithm.
 
-**Note-1**: This was first presented at the [HITBSecConf2023]([https://www.nohat.it/2022/talks](https://conference.hitb.org/hitbsecconf2023ams/session/commsec-exploring-jarm-an-active-tls-fingerprinting-algorithm/)) conference in Amsterdam, Netherlands on April 20, 2023 [Slides](https://www.mfmokbel.com/wp-content/uploads/2024/01/exploring_jarm_mfmokbel.pdf), [YouTube Recording](https://www.youtube.com/watch?v=MbgM4G1Ixv0).
+**Note-1**: This was first presented at the [HITBSecConf2023](https://conference.hitb.org/hitbsecconf2023ams/session/commsec-exploring-jarm-an-active-tls-fingerprinting-algorithm/) conference in Amsterdam, Netherlands on April 20, 2023 [Slides](https://www.mfmokbel.com/wp-content/uploads/2024/01/exploring_jarm_mfmokbel.pdf), [YouTube Recording](https://www.youtube.com/watch?v=MbgM4G1Ixv0).
 
 # Motivation
 
