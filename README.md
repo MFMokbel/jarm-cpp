@@ -92,7 +92,7 @@ Output:
  
 # History
  
- - First release on May 13, 2022.
+ - First release on January 24, 2024.
  
 # Contributing
 
